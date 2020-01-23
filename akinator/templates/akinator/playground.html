@@ -1,0 +1,19 @@
+{% extends 'akinator/base.html' %}
+{% block content %}
+    <h1>Show us what you've got</h1>
+    <div class="container">
+        <form method="post">{% csrf_token %}
+            {{ form.lyrics }}
+            <button type="submit">Find song</button>
+        </form>
+    </div><br>
+    <div class="container">
+        {% if titles %}
+            <ul>
+                {% for title in titles %}
+                    <li>{{ title }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+{% endblock content %}
