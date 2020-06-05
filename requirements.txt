@@ -5,7 +5,7 @@ attrs==19.3.0
 certifi==2019.11.28
 chardet==3.0.4
 dataclasses==0.7
-Django==3.0.2
+Django==3.0.7
 django-crispy-forms==1.8.1
 emoji==0.5.4
 idna==2.8
